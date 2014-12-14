@@ -21,3 +21,13 @@ the admin and authorisation sections
 - Create 'about' view, map it to urls.py, link to about page from index view and
 link to home from about view.
 - END OF CHAPTER FOUR
+
+- START CHAPTER FIVE (Templates and Static Media)
+- Set up templates directory and absolute template path in settings.py
+- Created index.html rango template
+- Update the index view to 'render' the index.html template
+- Set up 'static' folder and point to it in settings.py
+- Loaded staticfiles into index.html, loaded angielans image.
+- Setting up a simple development media server to upload images
+- Create about.html template, render it in the 'about' view, use a staticimage
+- END OF CHAPTER FIVE
