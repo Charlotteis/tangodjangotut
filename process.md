@@ -31,3 +31,20 @@ link to home from about view.
 - Setting up a simple development media server to upload images
 - Create about.html template, render it in the 'about' view, use a staticimage
 - END OF CHAPTER FIVE
+
+- START CHAPTER SIX (Models and Databases)
+- Make sure using the SqlLite Database
+- Set up Category Model
+- set up Page model with a ForeignKey (one to many) relationship with Category
+- Make sure the database is initialised with 'python manage.py migrate'
+- Created a superuse to work with admin interface/database
+- Make migrations for changed models 'python manage.py makemigrations rango'
+- Apply migrations 'python manage.py migrate'
+- Accessed the /admin interface for the first time with our superuser creds
+- Import and register the rango.models into the admin page to work with them
+- Add a meta class to the Category model to define a correct verbose_name_plural
+- Created and ran a database population script/model. 'populate_rango.py'
+- Exercises: Add 'likes' and 'views' with default of 0 to Category model,
+- Exercises: Migrate the new model changes
+- Exercises: Update populate script to include views and likes
+- Exercises: Customise the Admin Interface so that Page model shows category, page name and url
