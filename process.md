@@ -48,3 +48,18 @@ link to home from about view.
 - Exercises: Migrate the new model changes
 - Exercises: Update populate script to include views and likes
 - Exercises: Customise the Admin Interface so that Page model shows category, page name and url
+- END OF CHAPTER SIX
+
+## 15/12/2014
+- START CHAPTER SEVEN (Models, Templates and Views
+- Updated index view to use a queryset to display the top five categories (depending on likes)
+- Amend index template to use the categories within the index view
+- Implemented clean URLS using Django Slugify for pages within a category
+- Experienced database conflicts with the new slug implemenatation,
+hacked around it as per what I commented here: https://github.com/leifos/tango_with_django/issues/19
+- Created a Category view, to show pages within each category
+- Created a category template
+- Change the index template to link to category slugs
+- Exercise: Update populate script to add default view counts to pages
+- Exercise: Display the top five viewed pages in the index template
+- END CHAPTER SEVEN
