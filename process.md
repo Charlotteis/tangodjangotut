@@ -51,7 +51,7 @@ link to home from about view.
 - END OF CHAPTER SIX
 
 ## 15/12/2014
-- START CHAPTER SEVEN (Models, Templates and Views
+- START CHAPTER SEVEN (Models, Templates and Views)
 - Updated index view to use a queryset to display the top five categories (depending on likes)
 - Amend index template to use the categories within the index view
 - Implemented clean URLS using Django Slugify for pages within a category
@@ -63,3 +63,15 @@ hacked around it as per what I commented here: https://github.com/leifos/tango_w
 - Exercise: Update populate script to add default view counts to pages
 - Exercise: Display the top five viewed pages in the index template
 - END CHAPTER SEVEN
+
+- START CHAPTER EIGHT (Fun with Forms)
+- Created a Category and Page form in forms.py
+- Created an 'add category' view
+- Created an 'add category' template
+- Mapped the 'add category' view to the 'add category' template
+- Add 'add category' link to index template
+- Defined our own clean method within PageForm to prepend http:// to urls without http:// prepended
+    - This was broken. I had to make sure the PageForm Url had an widget of TextInpit()
+- The AddPage stuff was also broken. I can't explain how it was fixed, it involved 'rendertoresponse' and 'responsecontext'
+that I found by trawling through the internet for hours
+- END CHAPTER EIGHT
