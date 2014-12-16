@@ -75,3 +75,29 @@ hacked around it as per what I commented here: https://github.com/leifos/tango_w
 - The AddPage stuff was also broken. I can't explain how it was fixed, it involved 'rendertoresponse' and 'responsecontext'
 that I found by trawling through the internet for hours
 - END CHAPTER EIGHT
+
+## 16/12/2014
+- START CHAPTER NINE (User Authentication)
+- Add Password Hashers to settings.py
+- Added URLField and Image Upload field to User Model
+- Add UserProfile to Django Admin
+- Migrate the new UserModel attributes
+- Created the User and UserProfile forms
+- Created the user registration view
+- Created the user registration template
+- Created the user registration url
+- Added registration link to index template
+- Created the login view
+- Created the login template
+- Mapped login view to url
+- Added login link to index, also display username if user logged in, in index template
+- Created login url mapping
+- Ensured not-logged-in folk are directed the login page when trying to access restricted pages
+(Done via LOGIN_URL in settings.py)
+- Created logout view
+- Mapped logout view to logout url
+- Restricted Add Page & Add Category to logged in users
+- END CHAPTER NINE
+
+### Notes
+- How can I redirect to the category just created once add_category is completed.

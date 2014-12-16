@@ -66,6 +66,10 @@ DATABASES = {
     }
 }
 
+PASSWORD_HASHERS = (
+'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher'
+)
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
@@ -96,3 +100,6 @@ TEMPLATE_DIRS = [
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# If the user is not logged in, redirect them to the login
+LOGIN_URL = '/rango/login/'
