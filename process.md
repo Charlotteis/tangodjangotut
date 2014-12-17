@@ -99,5 +99,13 @@ that I found by trawling through the internet for hours
 - Restricted Add Page & Add Category to logged in users
 - END CHAPTER NINE
 
+- START CHAPTER TEN (Working with Templates)
+- Created base.html for other templates to inherit from (includes the DOCTYPE and user links)
+- Updated category.html to make use of template blocks and extends
+- Updated all templates to extend from base.html
+- Updated all urls in templates to utilise the url template tag
+- Updated restricted view to render the restricted.html template
+- END CHAPTER TEN
+
 ### Notes
 - How can I redirect to the category just created once add_category is completed.
