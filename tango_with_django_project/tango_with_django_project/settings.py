@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rango',
+    'registration',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -102,7 +103,14 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # If the user is not logged in, redirect them to the login
-LOGIN_URL = '/rango/login/'
+LOGIN_URL = '/accounts/login'
 
 # Delete session on browser close
 # SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+# 'registration' app settings
+REGISTRATION_OPEN = True
+ACOUNT_ACTIVATION_DAYS = 7 # Account activation window
+REGISTRATION_AUTO_LOGIN = True # User automatically logged in on register
+LOGIN_REDIRECT_URL = '/rango' # After login, take users to index
+LOGIN_URL = '/accounts/login/'

@@ -120,6 +120,16 @@ that I found by trawling through the internet for hours
 - Added visitor counter to the about page
 - END CHAPTER ELEVEN
 
+- START CHAPTER TWELVE (User Auth with Django-Registration-Redux)
+- pip install django-registration-redux
+- One step registration process (no emails involved)
+- Create registration templates: login, registration_form, registration_complete, logout
+- Remove old 'register', 'login' and 'logout' templates, views and urls
+- Amend RegistrationView model to direct users to index page on register (instead of registration_complete)
+- Add password_change_form and password_change_done templates
+- END CHAPTER TWELVE
+
+
 
 ### Notes
 - How can I redirect to the category just created once add_category is completed.
