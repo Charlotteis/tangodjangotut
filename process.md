@@ -102,10 +102,24 @@ that I found by trawling through the internet for hours
 - START CHAPTER TEN (Working with Templates)
 - Created base.html for other templates to inherit from (includes the DOCTYPE and user links)
 - Updated category.html to make use of template blocks and extends
+
+## 17/12/2014
+
 - Updated all templates to extend from base.html
 - Updated all urls in templates to utilise the url template tag
 - Updated restricted view to render the restricted.html template
 - END CHAPTER TEN
+
+- START CHAPTER ELEVEN (Cookies and Sessions)
+- Build a visitor counter in index view
+
+## 21/12/2014
+
+- Cookies in the tutorial were broken, moved straight to sessions.
+- Added sessions so info stored in backend not in cookies
+- Added visitor counter to the about page
+- END CHAPTER ELEVEN
+
 
 ### Notes
 - How can I redirect to the category just created once add_category is completed.

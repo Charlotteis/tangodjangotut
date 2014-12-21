@@ -9,6 +9,8 @@ from rango.models import Category, Page
 from rango.forms import CategoryForm, PageForm
 from rango.forms import UserForm, UserProfileForm
 
+from datetime import datetime
+
 
 def index(request):
     # Query the db for a list of all categories stored
@@ -17,14 +19,41 @@ def index(request):
     # Place the list in our context dictionary which will we pass to template
     category_list = Category.objects.order_by('-likes')[:5]
     page_list = Page.objects.order_by('-views')[:5]
+
     context_dict = {'categories': category_list, 'pages': page_list}
 
-    # Render response and send it back
-    return render(request, 'rango/index.html', context_dict)
+    visits = request.session.get('visits')
+    print visits
+    if not visits:
+        visits = 0
+    reset_last_visit_time = False
 
+    last_visit = request.session.get('last_visit')
+    print last_visit
+    if last_visit:
+        last_visit_time = datetime.strptime(last_visit[:-7], "%Y-%m-%d %H:%M:%S")
+        if (datetime.now() - last_visit_time).seconds > 5:
+            visits = visits + 1
+            reset_last_visit_time = True
+    else:
+        reset_last_visit_time = True
+
+    context_dict['visits'] = visits
+    request.session['visits'] = visits
+
+    if reset_last_visit_time:
+        request.session['last_visit'] = str(datetime.now())
+
+    response = render(request, 'rango/index.html', context_dict)
+
+    return response
 
 def about(request):
-    return render(request, 'rango/about.html')
+
+    visits = request.session.get('visits')
+    context_dict = {'visits': visits}
+
+    return render(request, 'rango/about.html', context_dict)
 
 
 def category(request, category_name_slug):
@@ -118,7 +147,6 @@ def add_page(request, category_name_slug):
                                                       'form': form}, context)
 
 def register(request):
-
     # A boolean value to tell template if registration was successful
     # Set to false initially, code will change value to True if reg success
     registered = False
