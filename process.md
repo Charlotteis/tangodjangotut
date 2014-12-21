@@ -151,8 +151,20 @@ that I found by trawling through the internet for hours
 - Mapped search url
 - Added search link to base template
 
+- START CHAPTER SIXTEEN (Making Rango Tango! Exercises) & SEVENTEEN (Solutions)
+- Track Page Click Through:
+    - Created track_url() view and url.
+    - Add goto link to categories in category template, rather than hard link
+- Searching within a Category Page:
+    - If user can't find the page they want within the category they should be able to search for it
+    - Remove generic search from top nav
+    - Add search template markup to category template
+    - Update category view to handle a POST request. View must then include any search results on context_dict
+    - Only authenticated users can search in a category
+
 
 
 ### Notes
 - How can I redirect to the category just created once add_category is completed.
 - How can I add the website and picture fields to the user registration form?
+- How can I implement the creation and viewing of user profiles? (16.3)
