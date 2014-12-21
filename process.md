@@ -138,6 +138,12 @@ that I found by trawling through the internet for hours
 - Updated registration_form template
 - END CHAPTER THIRTEEN
 
+- START CHAPTER FOURTEEN (Template Tags)
+- Learning to create our own template tags
+- Show all the categories a user can browse through in the sidebar
+- Created rango/templatetags folder
+- END CHAPTER FOURTEEN
+
 
 
 ### Notes
