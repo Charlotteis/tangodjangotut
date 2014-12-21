@@ -144,6 +144,13 @@ that I found by trawling through the internet for hours
 - Created rango/templatetags folder
 - END CHAPTER FOURTEEN
 
+- START CHAPTER FIFTEEN (Adding External Search Functionality)
+- Created a bing-search model
+- Created a search templae
+- Created a search view
+- Mapped search url
+- Added search link to base template
+
 
 
 ### Notes
