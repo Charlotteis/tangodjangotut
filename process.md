@@ -129,7 +129,17 @@ that I found by trawling through the internet for hours
 - Add password_change_form and password_change_done templates
 - END CHAPTER TWELVE
 
+- START CHAPTER THIRTEEN (Bootstrapping Rango)
+- Updated base to use bootstrap
+- Updated all templates to have a styled header
+- Updated the index template
+- Updated login template
+- Updated add_category and add_page templates
+- Updated registration_form template
+- END CHAPTER THIRTEEN
+
 
 
 ### Notes
 - How can I redirect to the category just created once add_category is completed.
+- How can I add the website and picture fields to the user registration form?
