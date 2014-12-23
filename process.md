@@ -162,6 +162,10 @@ that I found by trawling through the internet for hours
     - Update category view to handle a POST request. View must then include any search results on context_dict
     - Only authenticated users can search in a category
 
+- START CHAPTER EIGHTEEN (jQuery and Django)
+- Add jQuery to Project
+- Messed around with jQ.
+
 
 
 ### Notes
