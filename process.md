@@ -150,6 +150,7 @@ that I found by trawling through the internet for hours
 - Created a search view
 - Mapped search url
 - Added search link to base template
+- END CHAPTER FIFTEEN
 
 - START CHAPTER SIXTEEN (Making Rango Tango! Exercises) & SEVENTEEN (Solutions)
 - Track Page Click Through:
@@ -161,12 +162,14 @@ that I found by trawling through the internet for hours
     - Add search template markup to category template
     - Update category view to handle a POST request. View must then include any search results on context_dict
     - Only authenticated users can search in a category
+- END CHAPTERS SIXTEEN AND SEVENTEEN
 
 ## 23/12/2014
 
 - START CHAPTER EIGHTEEN (jQuery and Django)
 - Add jQuery to Project
 - Messed around with jQ.
+- END CHAPTER EIGHTEEN
 
 - START CHAPTER NINETEEN (Ajax in Django with jQuery)
 - Adding a like button, let users like a category, doesn't keep track though so expecting them not click like again...
@@ -188,6 +191,12 @@ that I found by trawling through the internet for hours
 - Tutorial fairly incomplete
 - Would like to try Selinium
 - 'pip install coverage' to see what percent of my code is covered by tests
+- END CHAPTER TWENTY
+
+- START CHAPTER TWENTY-ONE (Deploying your Project)
+- Deployed rango to PythonAnywhere
+- Changed debug mode, added bing API key
+- END CHAPTER TWENTY-ONE
 
 
 
@@ -197,3 +206,4 @@ that I found by trawling through the internet for hours
 - How can I redirect to the category just created once add_category is completed.
 - How can I add the website and picture fields to the user registration form?
 - How can I implement the creation and viewing of user profiles? (16.3)
+- AUTO_ADD_PAGE is broken
