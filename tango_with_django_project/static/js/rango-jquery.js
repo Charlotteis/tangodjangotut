@@ -1,3 +1,4 @@
+// Not needed, preserving it anyway
 $(document).ready(function() {
 
     $("#about-btn").click(function(event) {

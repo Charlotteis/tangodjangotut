@@ -162,9 +162,28 @@ that I found by trawling through the internet for hours
     - Update category view to handle a POST request. View must then include any search results on context_dict
     - Only authenticated users can search in a category
 
+## 23/12/2014
+
 - START CHAPTER EIGHTEEN (jQuery and Django)
 - Add jQuery to Project
 - Messed around with jQ.
+
+- START CHAPTER NINETEEN (Ajax in Django with jQuery)
+- Adding a like button, let users like a category, doesn't keep track though so expecting them not click like again...
+    - Add like count to categories
+    - Create a 'like category' view
+    - Write an AJAX GET Request for like button
+- Adding an inline category suggestion method
+    - Add ajax request form sidebar form
+    - Add get_category_list function and suggest_category view
+
+## 24/12/2014
+
+- Enable registered users to add a page to the suggested category by putting an "add" button next to each search results
+- Can't get the fucking thing working.
+- END CHAPTER NINETEEN
+
+
 
 
 
