@@ -183,6 +183,12 @@ that I found by trawling through the internet for hours
 - Can't get the fucking thing working.
 - END CHAPTER NINETEEN
 
+- START CHAPTER TWENTY (Automated Testing)
+- Wrote some tests
+- Tutorial fairly incomplete
+- Would like to try Selinium
+- 'pip install coverage' to see what percent of my code is covered by tests
+
 
 
 
